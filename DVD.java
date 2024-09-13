@@ -11,12 +11,12 @@ public class DVD extends Product {
         this.lenght = lenght;
     }
 
-    public String getRatio() {
+    public String getRating() {
         return this.rating;
     }
 
-    public void setRatio(String ratio) {
-        this.rating = ratio;
+    public void setRatio(String rating) {
+        this.rating = rating;
     }
 
     public String getStudio() {
@@ -33,7 +33,7 @@ public class DVD extends Product {
         rating = "";
         Studio = "";
     }
-    public DVD(int lenght, String ratio, String Studio, int number, String name, int quantity, double price){
+    public DVD(int lenght, String rating, String Studio, int number, String name, int quantity, double price){
         super(number, name, quantity, price);
         this.number = number;
         this.rating = rating;
