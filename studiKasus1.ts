@@ -1,4 +1,3 @@
-// Interface untuk struktur data pesanan
 interface Order {
   id: number;
   customer: string;
@@ -7,7 +6,6 @@ interface Order {
   price: number;
 }
 
-// Data pesanan yang diberikan
 const orders: Order[] = [
   { id: 1, customer: "Andi", menu: "Nasi Goreng", qty: 2, price: 20000 },
   { id: 2, customer: "Budi", menu: "Mie Ayam", qty: 1, price: 15000 },
@@ -30,4 +28,3 @@ const pesananQtyLebihDariSatu = orders.filter(order => order.qty > 1);
 
 console.log(pesananQtyLebihDariSatu);
 
-//npx ts-node test.ts
